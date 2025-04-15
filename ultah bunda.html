@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ucapan Ulang Tahun</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #1c1c1c;
+      font-family: 'Open Sans', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+      color: #f5f5f5;
+    }
+    .card {
+      background: #2a2a2a;
+      padding: 2rem;
+      border-radius: 18px;
+      max-width: 700px;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+      position: relative;
+      z-index: 2;
+    }
+    .title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #ffcc70;
+    }
+    .message {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      color: #f0e4d7;
+    }
+    .footer {
+      font-size: 0.95rem;
+      color: #aaa;
+    }
+    .image {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+      border-radius: 12px;
+    }
+
+    .firework, .star, .cake {
+      position: absolute;
+      animation: floatUp 3s infinite ease-in-out;
+    }
+    .firework {
+      width: 30px;
+      height: 30px;
+      background: radial-gradient(circle, #ff0, #f00, #00f);
+      border-radius: 50%;
+      top: 10%;
+      left: 20%;
+    }
+    .star {
+      width: 15px;
+      height: 15px;
+      background: yellow;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      top: 20%;
+      left: 80%;
+    }
+    .cake {
+      width: 50px;
+      height: 50px;
+      background: url('https://img.icons8.com/emoji/48/birthday-cake.png') no-repeat center/cover;
+      top: 70%;
+      left: 50%;
+    }
+    @keyframes floatUp {
+      0% {transform: translateY(0) scale(1); opacity: 1;}
+      50% {transform: translateY(-20px) scale(1.2); opacity: 0.8;}
+      100% {transform: translateY(0) scale(1); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <div class="firework"></div>
+  <div class="star"></div>
+  <div class="cake"></div>
+
+  <div class="card">
+    <div class="title">Selamat Ulang Tahun!</div>
+    <img class="image" src="ChatGPT Image Apr 15, 2025, 08_57_29 AM.png" alt="Family illustration">
+    <div class="message">
+      Di hari istimewa ini, semoga setiap detik terasa lebih hangat.<br/>
+      Kamu adalah hadiah berharga bagi banyak orang, jadi hari ini biarkan dunia bersyukur untukmu. ??<br/><br/>
+      Bertambah usia bukan sekadar angka, tapi perjalanan untuk menjadi versi terbaik dari dirimu. Terus bersinar dan menginspirasi. ?<br/><br/>
+      Selamat ulang tahun, semoga selalu diselimuti damai dan cinta sejati.
+    </div>
+    <div class="footer">
+      Dibuat dengan semangat coding dan cinta. ??
+    </div>
+  </div>
+</body>
+</html>
